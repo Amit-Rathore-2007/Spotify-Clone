@@ -1,0 +1,423 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0.5rem;
+    background-color: black;
+    color:white;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height:100vh;
+    border-radius: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.sidebar{
+    height: 85%;
+    width:340px;
+    background-color: #000000;
+}
+
+    .sidebar .nav{
+        background-color: #121212;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0.5rem 0.75rem;
+        height: 100px;
+        margin: 0 0.5rem 0 0;
+    }
+
+        .nav-option{
+            line-height: 2.5rem;
+            opacity: 0.5;
+            width: fit-content;
+            padding: 0 0.75rem;
+        }
+
+        .nav-option:hover{
+            opacity: 1;
+        }
+
+            .nav-option i{
+                font-size: 1.25rem;
+            }
+
+            .nav-option a{
+                margin-left: 1rem;
+            }
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+    .options{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 0.75rem 0.5rem 0.75rem;
+    }
+
+        .lib-option a{
+            position: relative;
+            bottom:0.145rem;
+        }
+
+        .lib-option img{
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+
+        .icons{
+            display: flex;
+        }
+            svg{
+                opacity: 0.7;
+                margin-right: 1rem;
+            }
+
+            #arrow{
+                position: relative;
+                bottom:0.145rem;
+            }
+
+    .lib-box{}
+
+        .box{
+            background-color: #232323;
+            margin: 1.5rem 0.5rem 1.75rem 0.5rem;
+            padding: 0.7rem 1rem 1rem 1rem;
+            border-radius: 0.75rem;
+        }
+
+            .box-p1{
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            .box-p2{
+                font-size: 0.85rem;
+                margin:1rem 0;
+            }
+
+            .badge{
+                background-color: white;
+                border: none;
+                border-radius: 100px;
+                padding:0.25rem 1rem;
+                font-weight: 700;
+                height:2rem;
+                width: fit-content;
+            }
+
+.main_content{
+    height: 85%;
+    flex:1;
+    background-color: #121212;
+    border-radius: 1rem;
+    overflow:auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+    .sticky-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top:0px;
+        z-index: 1;
+        background-color:#121212;
+        padding: 1.2rem 0;
+    }
+
+        .sticky-nav-icons{
+            margin-left:1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .sticky-nav-icons img{
+                height: 1.2rem;
+                align-items: center;
+            }
+
+        .sticky-nav-options{
+            display: flex;
+            align-items: center;
+        }
+
+            #install{
+                color: white;
+                background-color: black;
+                padding: 0.3rem 0.8rem;
+            }
+
+        .nav-item{
+            margin-right: 1rem;
+        }
+
+        .enclosed{
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+            .enclosed img{
+                position: relative;
+                top:0.4rem;
+                left:0.4rem;
+            }
+
+            .enclosed i{
+                position: relative;
+                top:0.29rem;
+                left:0.5rem;
+            }
+
+        .albums{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .main_topic{
+            margin-top:4rem;
+        }
+
+        .album-heading{
+            display: flex;
+            justify-content: space-between;
+            align-items:baseline;
+        }
+
+            .show-all{
+                background-color: #23232346;
+                color: #ffffff81;
+                font-size: 16px;
+            }
+
+            .show-all:hover{
+                background-color: #232323;
+                color: white;
+            }
+
+            .card{
+                background-color: #23232346;
+                width:9.5rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                transition: 0.2s ease-in;
+                margin:0 0.7rem 1rem 0;
+            }
+
+            .card:hover{
+                background-color: #232323a5;
+            }
+
+                .card-img{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
+
+                .card-title{
+                    font-weight: 600;
+                }
+
+                .card-info{
+                    font-size: 0.85rem;
+                    opacity: 0.8;
+                }
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .line{
+        width: 90%;
+        height: 30%;
+        border-top: 1px solid white;
+        opacity: 0.5;
+    }
+
+.music_player{
+    position: fixed;
+    bottom: 0px;
+    height: 4.5rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    margin: 0 1rem 0 0;
+}
+
+    .left{
+        display: flex;
+        height: 3.5rem;
+        width: 25%;
+        margin: 0.5rem;
+    }
+
+        .album-img{
+            align-self: center;
+            height: 56px;
+        }
+
+        .album-info{
+            margin: 0 2rem;
+        }
+
+            .album-title{
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin: 0.5rem 0 0.4rem 0;
+            }
+
+            .album-by{
+                font-size: 0.7rem;
+                opacity: 0.8;
+                margin: 0.5rem 0 0.4rem 0;
+            }
+
+        .album-icons{
+            height: 56px;
+            display: flex;
+        }
+
+            #a{
+                height: 1.25rem;
+                align-self: center;
+            }
+
+            #b{
+                height: 2rem;
+                align-self: center;
+                position: relative;
+                top:1px;
+            }
+
+    .player{
+        height: 3.5rem;
+        width:48% ;
+        margin: 0.5rem;
+    }
+
+        .player-controls{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .player-controls img{
+                height:0.8rem;
+                margin: 0 0.9rem;
+            }
+
+            .player-controls .play-button{
+                height: 1.7rem;
+            }
+
+        .playback{
+            display: flex;
+            justify-content: center;
+            align-items:  center;
+            font-size: 0.625rem;
+            margin-top: 1rem;
+        }
+
+            .playback span{
+                margin: 0 0.4rem;
+            }
+
+            .playback input{
+                appearance: none;
+                width: 50%;
+                background-color: transparent;
+            }
+
+            .playback input::-webkit-slider-runnable-track{
+                height:0.25rem;
+                border-radius: 100px;
+                background-color: #232323;
+            }
+
+            .playback input::-webkit-slider-thumb{
+                appearance: none;
+                height: 8px;
+                width: 8px;
+                background-color: #ddd;
+                border-radius: 50%;
+                margin-top: -2px;
+            }
+
+    .right{
+        display: flex;
+        height: 3.5rem;
+        width: 22%;
+        margin: 0.45rem 0.5rem 0.55rem 0;
+        align-items: center;
+    }
+
+    .icon{
+        opacity: 0.6;
+        margin-right:0.6rem ;
+    }
+
+    .icon:hover{
+        opacity: 1;
+    }
+
+        .icon1{
+            height: 2.2rem;
+        }
+
+        .icon2{
+            height: 2.3rem;
+        }
+
+        .icon3{
+            height: 1.3rem;
+        }
+
+        .icon4{
+            height: 0.9rem;
+        }
+
+        .icon5{
+            height: 2.2rem;
+        }
+
+        #volume{
+            height: 0.2rem;
+            width: 100%;
+            background-color: rgb(41, 116, 141);
+        }
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+@media (max-width:1137px){
+    .hide-card1{
+        display: none;
+    }
+}
+
+@media(max-width:957px) {
+
+}
+
